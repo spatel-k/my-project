@@ -31,6 +31,6 @@ jobs:
     - name: Build and Push Docker Image
       run: |
          docker build -t sudhirpatel/demo-app:new1 .
-         docker login -u="sudhirpatel" -p="Hell0_w0rld"
+         docker login -u sudhirpatel -p Hell0_w0rld
          docker tag demo-app-1 sudhirpatel/demo-app:new1  # Only if needed
          docker push sudhirpatel/demo-app:new1
